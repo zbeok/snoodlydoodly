@@ -1,0 +1,192 @@
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background: #63ace5; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #63ace5; 
+}
+
+body {
+    background:url(http://static.tumblr.com/7ed33f146bdad76530c57305db46bbfd/tcpd9hr/gX1ns48g4/tumblr_static_1rrhberya1z48o0w4s80cogww.gif);
+	font-family: 'Josefin Sans',  'Helvetica Neue', HelveticaNeue, Arial, sans-serif;
+	font-size: 16px;
+}
+
+#container {
+	width: 800px;
+	height: 800px;
+	margin: 50px auto;
+	z-index:-1;
+}
+
+#boxes {
+    width:750px;
+    margin:auto;
+    
+}
+
+.box {	
+	postion:absolute;
+	display: inline-block;
+	vertical-align:top;
+	background-color: rgb(235, 251, 255);
+	color: #000000;
+	border: 1px solid white;
+	height: 200px;
+	width:200px;
+	margin: 15px 15px;
+	border-radius: 10px;
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
+	padding: 5px;
+}
+.box:hover {
+	background-color: #ffffff;
+	color:#63ace5;
+}
+
+.box p {
+    margin: 0 5px;
+}
+
+
+#tag {
+    
+}
+
+#id {
+     
+}
+#friends {
+    padding: 5px;
+}
+
+.title {
+	font-size: 28px;
+	font-family: 'Josefin Sans', 'Helvetica Neue', HelveticaNeue, Arial, sans-serif;
+	font-weight: bold;
+	margin: -35px 0 0 5px;
+	position: relative;
+	z-index: 10;
+}
+
+#yohabla {
+    width: 450px;
+	display: inline-block;
+	background-color: rgb(235, 251, 255);
+	height: 200px;
+	margin: 20px 15px;
+	border-radius: 10px;
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
+	padding:5px;
+}
+#yohabla p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+#yotri {
+    position:absolute;
+    width: 0;
+    height: 0;
+    margin: -100px 0 0 475px;
+    border-style: solid;
+    border-width: 20px 0 20px 40px;
+    border-color: transparent transparent transparent rgb(235, 251, 255);
+}
+
+#yo {
+    postion:absolute;
+    float:right;
+	display: inline-block;
+	background-color: rgb(235, 251, 255);
+	border: 1px solid white;
+	height: 150px;
+	width:150px;
+	margin: 75px 35px 0 0;
+	border-radius: 10px;
+}
+
+#yo img {
+    float:right;
+    height:200px;
+	width:auto;
+	margin: -50px 0 0 0;
+}
+.mename {
+	font-size: 30px;
+	font-family: 'Josefin Sans', 'Helvetica Neue', HelveticaNeue, Arial, sans-serif;
+	float:right;
+	font-weight: bold;
+	margin: -20px 0 0 5px;
+	position: relative;
+	z-index: 10;
+}
+
+#main {
+	float:left;
+	height: 190px;
+    overflow-y: scroll;
+}
+
+.main {	
+	display: inline-block;
+	font-size: 16px;
+	background-color: #b3ecff;
+	height: 80px;
+	width: 80px;
+	margin: 3px 3px;
+	border-radius: 40px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	z-index:100;
+}
+
+.main:hover {
+	background-color: #80d5ff;
+}
+
+.main a {
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 75px;
+	font-family: 'Josefin Sans',  'Helvetica Neue', HelveticaNeue, Arial, sans-serif;
+	color: #ffffff;
+}
+
+#about {
+	text-decoration:none;
+	font-size:20px;
+	margin: 20px;
+    float: right;
+    color: #80d5ff;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+#about:hover {
+    color:#000000;
+}

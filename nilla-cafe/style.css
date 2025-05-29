@@ -1,0 +1,98 @@
+/******************************************************************************
+STYLE
+******************************************************************************/
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #69F7BE;
+  --color-text-main: #000000;
+  --color-primary: #FFFF00;
+  --wrapper-height: 87vh;
+  --font-family: "Quicksand";
+  --font-family-header: "Quicksand";
+  --bg-img: url("http://orig13.deviantart.net/e449/f/2015/164/7/5/gif_by_kuroeko-d8x7mlk.gif");
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+body {
+  background: var(--bg-img);
+  background-size: cover;
+  font-family: "Quicksand", serif;
+  text-transform: lowercase;
+  font-weight: bold;
+  color: #ff9999;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 460px;
+  height: 460px;
+  border: 20px solid white;
+  z-index: 0;
+  background: url("http://41.media.tumblr.com/179c69067c79176fbe1555ef63bd3e42/tumblr_nzrwi7wdcq1tqt1h6o1_500.png");
+  background-position: center;
+  position: relative;
+  overflow:hidden;
+}
+
+#ui {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+#reaction {
+  height: 300px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  
+}
+
+#stats {
+  width: 150px;
+}
+
+#sprite {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+}
+
+#talkbubble {
+  height: 80px;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 1000;
+}
+
+.talk {
+}
+
+#container a {
+  text-decoration: none;
+  color: #ffe8cc;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+#container a:hover {
+  color: #ffad4d;
+}
