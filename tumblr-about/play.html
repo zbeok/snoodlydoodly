@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="play.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript" src="/tumblr-about/data.js"></script>
+    <script type="text/javascript" src="/js/datesim.js"></script>
+
+    <script type="text/javascript">
+      document.onkeydown = function(e) {
+        e = e || window.event;
+        if (e.which == 39) {
+          //right
+          document.getElementsByClassName("reply")[0].click();
+        } else if (e.which == 37) {
+          //left
+          document.getElementById("back").click();
+        }
+      };
+    </script>
+  </head>
+
+  <body>
+    <div id="bg"></div>
+    <div id="container">
+      <button id="back">back</button>
+      <div id="yo">
+        <img id="sprite" src="" />
+      </div>
+      <div id="talkbubble">
+        <div id="talkbubble-tri"></div>
+        <div id="talk">
+          <h1 id="name"></h1>
+          <p id="dialogue"></p>
+          <div id="replies">
+            <!-- <button class="reply" onclick="nextscene(0)">example</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

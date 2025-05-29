@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;900&display=swap');
+body {
+  margin:0;padding:0;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-family:"Quicksand", "sans-serif";
+  background-color:black;
+}
+
+h1, p {
+  padding:0;margin:0;
+  color: #000000;
+  font-size: 16px;
+}
+a {
+  color: #000000;
+  z-index: -1;
+  text-decoration:none;
+}
+button{
+  background-color:#bbbbff;
+  color:#8078ff;
+  border-radius:20px;
+  z-index:100;
+}
+button:hover {
+  background-color:#ccccff;
+}
+
+#container {
+  position:relative;
+  height: 400px;
+  width: 600px;
+  background-size:cover;
+  border-radius:10px;
+  border: 3px inset #bbbbff;
+}
+#bg-blur {
+  position:fixed;
+  z-index:-1;
+  width:100%;height:100%;
+  filter: blur(5px) brightness(70%);
+}
+#sprite {
+  height: 400px;
+  left:0;bottom:0;
+  position: absolute;
+}
+
+#talkbubble {
+  position: absolute;
+  bottom:0;
+  width: 94%;
+  margin:10px 3%;
+  height: auto;
+  background-color:rgba(255,255,200,.7);
+  border-radius:10px;
+}
+
+#talk {
+  font-weight: 600;
+  margin:25px;
+}
+#name {
+  font-weight: 900;
+  position: absolute;
+  top:-26px;
+  left:-14px;
+  font-size:32px;
+  background-color:#bbbbff;
+  color:#8078ff;
+  border-radius:20px;
+  padding: 2px 10px;
+}
+#replies{
+  margin-top:10px;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+.reply {
+  padding: 2px 10px;
+  margin:2px;
+  white-space: nowrap;
+}
+#back {
+  position:absolute;
+  top:5px;
+  left:5px;
+}
+
+@media (max-width: 600px) { 
+#container {
+  height:100%;
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  border-radius:0;
+  border: 0px;
+}
+
+#sprite {
+  width: auto;
+  height:100%;
+  left:initial;
+  position: relative;
+}
+
+}
