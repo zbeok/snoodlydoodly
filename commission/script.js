@@ -65,7 +65,7 @@ var options = {
     // price: "???",
     pivot: "center",
     media:
-      "https://cdn.glitch.global/5a41fc45-6453-4780-8000-58f85c2502fc/bugz(1).gif?v=1641534357909",
+      "../assets/bugz.gif",
     desc: "i love entertaining whimsy and i hate boxes! if you have a project outside of these options, i'd be ecstatic to discuss what i can do for you.",
   },
 };

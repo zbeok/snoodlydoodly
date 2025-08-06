@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
 /******************************************************************************
 STYLE
 ******************************************************************************/
@@ -9,7 +10,7 @@ STYLE
   --wrapper-height: 87vh;
   --font-family: "Quicksand";
   --font-family-header: "Quicksand";
-  --bg-img: url("http://orig13.deviantart.net/e449/f/2015/164/7/5/gif_by_kuroeko-d8x7mlk.gif");
+  --bg-img: url("../assets/bg-by-kuroeko.gif");
 }
 
 /* Basic page style resets */
@@ -41,7 +42,7 @@ body {
   height: 460px;
   border: 20px solid white;
   z-index: 0;
-  background: url("http://41.media.tumblr.com/179c69067c79176fbe1555ef63bd3e42/tumblr_nzrwi7wdcq1tqt1h6o1_500.png");
+  background: url("../assets/cafe-bg.png");
   background-position: center;
   position: relative;
   overflow:hidden;

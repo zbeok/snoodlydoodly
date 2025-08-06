@@ -1,34 +1,34 @@
-var bgs={
-  "park":"https://i.imgur.com/AIPgDFX.jpg",
-  "woods":"https://i.imgur.com/k4oj07k.jpg",
-  "woods_dark":"https://i.imgur.com/X1ywvzH.jpg",
-  "cafe":"https://i.imgur.com/plr4Eu9.jpg",
-  "coffee":"https://i.imgur.com/HtpNzrP.jpg",
-  "space":"https://i.imgur.com/ahuM98r.jpg",
+var bgs = {
+  "park": "./assets/park.png",
+  "woods": "./assets/woods.png",
+  "woods_dark": "./assets/woods-dark.png",
+  "cafe": "./assets/cafe.png",
+  "coffee": "./assets/coffee.png",
+  "space": "./assets/space.png",
 }
 var sil = {
-  "normal":"https://i.imgur.com/v8j50o2.png",
-  "half":"https://i.imgur.com/2miC4TM.png",
-  "closed":"https://i.imgur.com/ZzBJJhr.png",
+  "normal": "./assets/sil.png",
+  "half": "./assets/sil-1.png",
+  "closed": "./assets/sil-2.png",
 }
 var calem = {
-  "normal":"https://i.imgur.com/VEAsQlu.png",
-  "blink":"https://i.imgur.com/tR2I32z.png",
-  "flustered":"https://i.imgur.com/sXUIPjD.png",
-  "sheepish":"https://i.imgur.com/iudIGAu.png",
-  "happy":"https://i.imgur.com/CH4nFCh.png",
-  "dark":"https://i.imgur.com/nkvmHMc.png",
-  "wtf":"https://i.imgur.com/r60WECM.png",
-  "omg":"https://i.imgur.com/ikydCOv.png",
-  "embarassed":"https://i.imgur.com/ZifBuoP.png",
+  "normal": "./assets/calem-normal.png",
+  "blink": "./assets/calem-blink.png",
+  "flustered": "./assets/calem-flustered.png",
+  "embarassed": "./assets/calem-embarassed.png",
+  "sheepish": "./assets/calem-sheepish.png",
+  "happy": "./assets/calem-happy.png",
+  "dark": "./assets/calem-dark.png",
+  "wtf": "./assets/calem-wtf.png",
+  "omg": "./assets/calem-omg.png",
 }
 
 var waitress = {
-  "normal":"https://i.imgur.com/g4nBHke.png",
+  "normal": "./assets/waitress.png",
 }
 var scenes = {
   0: {
-    name:"phi",
+    name: "phi",
     sprite: false,
     bg: false,
     dialogue: "12/30/2021 - This was written for a friend a long time ago. \
@@ -192,8 +192,8 @@ and you never got to hear what he had to say.",
   },
 
   16.2: {
-    sprite:false,
-    bg:bgs.space,
+    sprite: false,
+    bg: bgs.space,
     dialogue: "...And then, he fainted.",
     reply: { "BAD END": 0 }
   },
@@ -247,24 +247,24 @@ and became the really stereotypically lovey dovey couple. Congratulations!",
     reply: { "GOOD END!": 0 }
   },
   "s1": {
-    sprite:sil.normal,
-      name: "Sil",
+    sprite: sil.normal,
+    name: "Sil",
     bg: bgs.park,
-    dialogue:"...",
-    reply: {"->":"s2"}
+    dialogue: "...",
+    reply: { "->": "s2" }
   },
   "s2": {
-    sprite:sil.half,
-      name: "Sil",
+    sprite: sil.half,
+    name: "Sil",
     bg: bgs.woods,
-    dialogue:".........................",
-    reply: {"->":"s3"}
+    dialogue: ".........................",
+    reply: { "->": "s3" }
   },
   "s3": {
-    sprite:sil.closed,
-      name: "THE END",
+    sprite: sil.closed,
+    name: "THE END",
     bg: bgs.woods_dark,
-    dialogue:"",
-    reply: {"restart":"0"}
+    dialogue: "",
+    reply: { "restart": "0" }
   }
 };
